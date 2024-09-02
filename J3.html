@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nómina de Maestros/as</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e0f7fa; /* Azul claro */
+        }
+        tr:hover {
+            background-color: #b2ebf2; /* Azul más claro para el hover */
+        }
+        .status {
+            font-weight: bold;
+        }
+        .active {
+            color: green;
+        }
+        .inactive {
+            color: red;
+        }
+        .date {
+            color: #555;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nómina de Maestros/as</h1>
+        <p>Que han venido a trabajar a esta escuela</p>
+    </header>
+
+    <div class="container">
+        <h2>Antes de Oficializar</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha de Llegada</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ricardo Pérez Luna</td>
+                    <td>1990</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Mauricio Navarrete</td>
+                    <td>1990</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Reina Elizabeth Alfaro</td>
+                    <td>1990</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Scherly Najarro</td>
+                    <td>1990</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Reyna Hernández</td>
+                    <td>1990</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Gladis Méndez de Cañas</td>
+                    <td>1991</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Benjamin González</td>
+                    <td>1991</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Prof. Panameño</td>
+                    <td>1991</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Desde la Oficialización</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha de Oficialización</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Delmy de los Angeles Bolaños</td>
+                    <td class="date">11-03-92</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Estanislao Evelio Mina</td>
+                    <td class="date">15-05-92</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Maritza Elizabeth Sánchez</td>
+                    <td class="date">15-05-92</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>Manuel de Jesús Tévez</td>
+                    <td class="date">28-02-93</td>
+                    <td class="status active">(Activo)</td>
+                </tr>
+                <tr>
+                    <td>Celina Esmeralda Zaldivar</td>
+                    <td class="date">01-03-93</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>Jesús Evelia Calderón</td>
+                    <td class="date">1-03-93</td>
+                    <td class="status inactive">(Jubilada)</td>
+                </tr>
+                <tr>
+                    <td>Blanca Elizabeth Rivas</td>
+                    <td class="date">8-03-93</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>Ana Elizabeth Menjivar</td>
+                    <td class="date">24-03-93</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>Daysi Concepción Molina</td>
+                    <td class="date">24-03-93</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Marta de Jesús Velásquez</td>
+                    <td class="date">01-04-93</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>Gloria del Carmen Navas</td>
+                    <td class="date">01-04-93</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>Angela Guillermina Barahona</td>
+                    <td class="date">1-04-93</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Maria Elena Pacheco</td>
+                    <td class="date">19-05-93</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+                <tr>
+                    <td>José Roberto Alegría Monterrosa</td>
+                    <td class="date">11-04-94</td>
+                    <td class="status active">(Activo)</td>
+                </tr>
+                <tr>
+                    <td>Frince Maravilla Lozano</td>
+                    <td class="date">23-05-94</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Jorge Alberto Galán</td>
+                    <td class="date">11-04-94</td>
+                    <td class="status active">(Activo)</td>
+                </tr>
+                <tr>
+                    <td>Camilo William Gutiérrez</td>
+                    <td class="date">23-05-94</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Iván Alexander Burgos</td>
+                    <td class="date">1-06-94</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Ana Marina Jaco de Lobo</td>
+                    <td class="date">07-01-95</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Elsy Magdalena Figueroa</td>
+                    <td class="date">01-06-94</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Ricardo Pérez Luna</td>
+                    <td class="date">2-05-95</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Nohemy Lizarda Torres</td>
+                    <td class="date">22-05-95</td>
+                    <td class="status inactive">(No disponible)</td>
+                </tr>
+                <tr>
+                    <td>Ada Beatriz Henriquez</td>
+                    <td class="date">02-06-95</td>
+                    <td class="status active">(Activa)</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="button-container">
+            <a href="index.html" class="btn">Regresar a la Página Principal</a>
+        </div>
+    </div>
+</body>
+</html>
